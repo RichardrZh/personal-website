@@ -2,26 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* css dev help, for debug only */
+* {
+  outline: 1px solid sandybrown;
+}
+/* css dev help, for debug only */
+
+
+
+
+/* all */
+
+* {
+  color: #eed5f6;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+
+
+
+/* gallery (myworks) */
+
+.gallery-track {
+  transform: translateY(-50%);
+}
+
+
+
+.project-card:hover .project-card:active .project-card:focus {
+  transform: scale(1.05);
+}
+
+
+
+/* home */
+
+.button-m-p {
+  @apply mx-4 my-4 px-4 py-2;
+}
+
+
+
+
+
+
+/* topbar */
+
+.topbar {
+  @apply fixed top-0 z-30 w-screen max-w-full
+  px-6 py-3 h-20;
+}
+
+@media (max-width: 768px) {
+  .primary-navigation-menu-visible {
+    transform: translateX(0%);
+  }
+  .primary-navigation-small {
+    inset: 0 0 0 30%;
+    padding: min(30vh, 10rem) 2rem;
+    background: hsl(0 0% 0% / 0.75);
+  
+    /* transition: transform 350ms ease-out; */
+    /* annoying bug where on md transition, because of transform property change, open->close menu animation plays */
+  }
+  .primary-navigation-menu-not-visible {
+    transform: translateX(100%);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@supports (backdrop-filter: blur(1rem)) {
+  .primary-navigation-small {
+    background: hsl(0 0% 0% / 0.1);
+    backdrop-filter: blur(1rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .primary-navigation-large {
+    inset: auto;
+    padding: 0;
+  
+    background-image: none;
+    background-position: 0% 0%;
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-color: transparent;
+    backdrop-filter: none;
+  
+    transition-delay: 0s;
+    transition-duration: 0s;
+    transition-property: all;
+    transition-timing-function: ease; 
+  }
 }
