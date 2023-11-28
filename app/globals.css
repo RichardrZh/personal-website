@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  /* border: 1px solid orange; */
+  color: whitesmoke;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
+}
+
+:root {
+  /* CSS Vars */
+
+  /* used in LeftSidebar.modules.css */
+  --nav-shadow-blur-mobile: 3px;
+  --nav-shadow-blur-desktop: 3px;
+  --nav-shadow-offset-mobile: 4px;
+  --nav-shadow-offset-desktop: 4px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+
+/* AnimatedPortraitInformalSVG */
+#rzpi path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: animate-path 4s ease alternate infinite;
+}
+
+@keyframes animate-path {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  
+  100% {
+    stroke-dashoffset: 0;
+  }
 }

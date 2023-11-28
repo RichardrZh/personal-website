@@ -1,0 +1,25 @@
+/* :root or .shadow:has (<-- for parent so that css vars can be defined in parent and inheirited by .shadow) {
+    --nav-shadow-blur-mobile: 3px;
+    --nav-shadow-blur-desktop: 3px;
+    --nav-shadow-offset-mobile: 4px;
+    --nav-shadow-offset-desktop: 4px;
+} */
+
+.shadow {
+    /* the idea: by setting shadow spread to the negative of blur, we can set
+       the shadow to be on one side of the container by purely manipulating h-offset and v-offset
+     */
+    box-shadow: 0 var(--nav-shadow-offset-mobile) var(--nav-shadow-blur-mobile) calc(0px - var(--nav-shadow-blur-mobile)) lightskyblue;
+}
+
+/* 'min-width: 768px' is the same as tailwind md */
+@media (min-width: 768px) {
+    .shadow {
+        box-shadow: var(--nav-shadow-offset-desktop) 0 var(--nav-shadow-blur-desktop) calc(0px - var(--nav-shadow-blur-desktop)) lightskyblue;
+    }
+}
+
+.shadow:hover {
+    --nav-shadow-offset-mobile: 5px;
+    --nav-shadow-offset-desktop: 5px;
+}

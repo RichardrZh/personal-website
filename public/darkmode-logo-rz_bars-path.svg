@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="40mm"
+   height="40mm"
+   viewBox="0 0 40 40"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       xlink:href="#linearGradient27"
+       id="linearGradient28"
+       x1="397.49524"
+       y1="105.14244"
+       x2="465.21887"
+       y2="105.14244"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient27">
+      <stop
+         style="stop-color:#0062f4;stop-opacity:1;"
+         offset="0.34675616"
+         id="stop27" />
+      <stop
+         style="stop-color:#00d4f9;stop-opacity:1;"
+         offset="1"
+         id="stop28" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient27"
+       id="linearGradient1"
+       gradientUnits="userSpaceOnUse"
+       x1="397.49524"
+       y1="105.14244"
+       x2="465.21887"
+       y2="105.14244" />
+    <linearGradient
+       xlink:href="#linearGradient27"
+       id="linearGradient2"
+       gradientUnits="userSpaceOnUse"
+       x1="397.49524"
+       y1="105.14244"
+       x2="465.21887"
+       y2="105.14244" />
+    <linearGradient
+       xlink:href="#linearGradient27"
+       id="linearGradient3"
+       gradientUnits="userSpaceOnUse"
+       x1="397.49524"
+       y1="105.14244"
+       x2="465.21887"
+       y2="105.14244" />
+    <linearGradient
+       xlink:href="#linearGradient27"
+       id="linearGradient4"
+       gradientUnits="userSpaceOnUse"
+       x1="397.49524"
+       y1="105.14244"
+       x2="465.21887"
+       y2="105.14244" />
+  </defs>
+  <g
+     id="layer1">
+    <g
+       id="g21"
+       transform="matrix(0.26458333,0,0,0.26458333,-22.643261,-11.608217)"
+       style="display:inline">
+      <g
+         id="g19">
+        <g
+           id="g18"
+           style="display:inline;fill:none;fill-opacity:1;stroke:url(#linearGradient28)"
+           transform="rotate(-43.953475,295.60501,495.61402)">
+          <rect
+             style="fill:none;fill-opacity:1;stroke:url(#linearGradient1);stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+             id="rect15"
+             width="44.197121"
+             height="8.4859228"
+             x="419.52176"
+             y="79.042404" />
+          <rect
+             style="fill:none;fill-opacity:1;stroke:url(#linearGradient2);stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+             id="rect16"
+             width="44.197121"
+             height="8.4859228"
+             x="407.65045"
+             y="93.670105" />
+          <rect
+             style="fill:none;fill-opacity:1;stroke:url(#linearGradient3);stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+             id="rect17"
+             width="44.197121"
+             height="8.4859228"
+             x="415.28305"
+             y="108.02274" />
+          <rect
+             style="fill:none;fill-opacity:1;stroke:url(#linearGradient4);stroke-width:3;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1"
+             id="rect18"
+             width="44.197121"
+             height="8.4859228"
+             x="398.99524"
+             y="122.75655" />
+        </g>
+      </g>
+      <g
+         id="g20">
+        <text
+           xml:space="preserve"
+           style="font-size:52.2777px;letter-spacing:1px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.225;stroke-dasharray:none"
+           x="155.51222"
+           y="137.09113"
+           id="text19"><tspan
+             id="tspan19"
+             x="155.51222"
+             y="137.09113"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Bold';letter-spacing:1px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.225;stroke-dasharray:none">RZ</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

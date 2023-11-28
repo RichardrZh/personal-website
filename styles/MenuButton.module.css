@@ -1,0 +1,13 @@
+/* NOT FUNCTIONAL RIGHT NOW NEED TO FIGUE OUT REACT FA STYLES */
+
+
+.menu .fa-xmark:hover {
+    scale: 1.1;
+    color: red;
+    transition: all 350ms;
+}
+
+.menu .fa-bars  {
+    color: dodgerblue;
+    transition: all 350ms;
+}

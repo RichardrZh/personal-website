@@ -1,0 +1,22 @@
+.openTransition {
+    transition: transform 350ms ease-out;
+}
+
+/* same as tailwind md */
+@media (min-width: 768px) {
+    .openTransition {
+        transition-duration: 0s;
+    }
+}
+
+
+.backdrop {
+    background: hsl(0 0% 0% / 0.75);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .backdrop {
+      background: hsl(0 0% 0% / 0.1);
+      backdrop-filter: blur(1rem);
+    }
+}
