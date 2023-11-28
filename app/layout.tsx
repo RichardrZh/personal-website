@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
+import { Analytics } from '@vercel/analytics/react';
+
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false;
@@ -21,6 +23,7 @@ export default function RootLayout({
   return (
     <html className="h-full" lang="en">
       <body className={inter.className + " h-full"}>{children}</body>
+      <Analytics />
     </html>
   )
 }
