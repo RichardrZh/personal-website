@@ -1,4 +1,4 @@
-import styles from "../styles/HTMLTagStyledWrapper.module.css";
+import styles from "@/styles/HTMLTagStyledWrapper.module.css";
 
 export default function HTMLTagStyledWrapper({
     tag,
@@ -11,7 +11,9 @@ export default function HTMLTagStyledWrapper({
 }) {
     
     return (
-        <div className={typeof className === "undefined" ? "relative overflow-auto w-fit h-fit" : className + " relative overflow-auto"}> 
+        <div className={"relative" 
+                        + " border border-solid border-transparent" /* this is a hack to prevent margin collapse without using overflow or padding */
+                        + (typeof className === "undefined" ? " w-fit h-fit" : ` ${className}`)}> 
             <i className={`absolute top-0 left-0 ${styles.font}`}>{`<${tag}>`}</i>
 
             <div className="mx-10 my-7">

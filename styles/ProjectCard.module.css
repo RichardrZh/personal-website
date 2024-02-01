@@ -1,0 +1,11 @@
+.container:hover .overlay
+ {
+	transform: translateX(/* -60vmin */-65%);
+}
+
+.container:hover .overlay-banner {
+	transition-delay: .2s;
+	transform: translateX(/* 60vmin */65%);
+}
+.overlay { }
+.overlay-banner {}

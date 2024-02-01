@@ -1,0 +1,15 @@
+.dropdown {
+    clip-path: inset(0);
+    height: 0;
+    /* for some reason, module.css for next does not support multiple transitions, it seperates them causing an overwrite issue. 
+        -> hack: just manually apply the transition inline */
+    
+    /* transition: clip-path 0s ease-out, height 200ms ease-out; */
+    transition: height 250ms ease-out;
+}
+  
+.dropdown-open  {
+    height: var(--dropdown-height);
+    /* clip-path: inset(-100vh -100vw); */
+    /* transition-delay: 200ms, 0s;  */
+}
