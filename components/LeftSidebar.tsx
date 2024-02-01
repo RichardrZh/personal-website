@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from "react";
-import MenuButton from "./MenuButton";
-import LeftNavbar from "./LeftNavbar";
-import styles from "../styles/LeftSidebar.module.css"
+import MenuButton from "@/components/MenuButton";
+import LeftNavbar from "@/components/LeftNavbar";
+import styles from "@/styles/LeftSidebar.module.css"
 
 export default function LeftSidebar({ 
     header,
@@ -22,10 +22,10 @@ export default function LeftSidebar({
     // add get client width (using hook?) for marginleft/right change -> nvm instead of margin left/right, use transform translatex
     // 
     return (/* float  */
-        <section className={"sticky top-0 left-0" 
+        <section className={"fixed top-0 left-0" 
                             + " flex md:flex-col justify-between items-stretch text-center"
-                            + " md:max-h-full md:h-screen"
-                            + ` ${styles.shadow}`
+                            + " w-screen md:w-auto md:h-screen max-w-full max-h-full"
+                            + ` ${styles.shadow} bg-black`
                             + " z-40"}>
             <header className="flex justify-center items-center">
                 {header}

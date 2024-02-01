@@ -1,0 +1,7 @@
+.submit:active:hover {
+    scale: 0.9;
+}
+
+.submit {
+    transition: scale 250ms ease;
+}

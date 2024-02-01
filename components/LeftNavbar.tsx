@@ -1,7 +1,7 @@
 "use client"
 import MainRouteEnum from "@/libs/enums/MainRouteEnum";
-import NavItem from "./NavItem";
-import styles from "../styles/LeftNavbar.module.css"
+import NavItem from "@/components/NavItem";
+import styles from "@/styles/LeftNavbar.module.css"
 import { useEffect, useId } from "react";
 
 export default function LeftNavbar({
@@ -21,25 +21,24 @@ export default function LeftNavbar({
     );
 
     useEffect(() => {
-        let modal = document.getElementById(backdropId);
+        const modal = document.getElementById(backdropId);
+        const modalListener = (event: any) => {
+            if (event.target === modal) {
+                close()
+            }
+        };
 
         // When the user clicks anywhere outside of the modal, close it
         if (modal) {
-            modal.addEventListener("click", (event) => {
-                if (event.target === modal) {
-                    close()
-                    console.log(isOpen)
-                }
-            });
-
-            modal.addEventListener("touchend", (event) => {
-                if (event.target === modal) {
-                    close()
-                }
-            });
+            modal.addEventListener("click", modalListener);
+            modal.addEventListener("touchend", modalListener);
         }  
         
-    }, [])
+        return () => {
+            modal?.removeEventListener("click", modalListener);
+            modal?.addEventListener("touchend", modalListener);
+        };
+    }, []);
 
     return (
         <>
@@ -49,7 +48,7 @@ export default function LeftNavbar({
                         + " max-h-full h-screen w-[80vw] md:w-auto" 
                         + (isOpen ? " shadow shadow-white" : ` translate-x-full md:transform-none ${styles.backdrop}`)}>
                 {routes.map((route) => 
-                    <NavItem key={route} route={route} />
+                    <NavItem key={route} route={route} onClick={close} />
                 )}
             </nav> 
 

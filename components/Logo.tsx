@@ -1,5 +1,5 @@
 import Image from "next/image";
-import rzBarsLogo from "../public/darkmode-logo-rz_bars-path.svg";
+import rzBarsLogo from "@/public/darkmode-logo-rz_bars-path.svg";
 
 export default function Logo({
   className

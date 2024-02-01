@@ -30,7 +30,7 @@ function pathnameToEnum(pathname: string) {
         return MainRouteEnum.HOME;
     }
     
-    let value = pathname.substring(pathname.lastIndexOf('/') + 1).toUpperCase();
+    let value = pathname.split('/', 2)[1].toUpperCase();
     return MainRouteEnum[value as keyof typeof MainRouteEnum];
 }
 

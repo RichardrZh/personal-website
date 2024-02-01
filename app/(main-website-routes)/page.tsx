@@ -7,13 +7,13 @@ import AnimatedPortraitInformalSVG from '@/components/AnimatedPortraitInformalSV
 export default function Home() {
   
   return (
-    <main className='flex flex-col md:flex-row justify-center md:justify-evenly items-center h-full w-full py-10 px-5'>
-      <hgroup>
+    <main className='flex flex-col md:flex-row justify-center md:justify-evenly items-center h-full w-full'>
+      <hgroup className='m-5'>
         <HTMLTagStyledWrapper tag='header'>
         
           <p>Hi, my name is</p>
-          <h1>Richard Zhuang.</h1>
-          <h2>Software Developer. Web Developer. </h2>
+          <h1>Richard&nbsp;Zhuang.</h1>
+          <h2>Software Developer.{/*  Web Developer.  */}</h2>
 
         </HTMLTagStyledWrapper>
         

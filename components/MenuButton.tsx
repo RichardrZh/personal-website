@@ -1,5 +1,5 @@
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
-import FaCenteredIcon from "./FaCenteredIcon";
+import FaCenteredIcon from "@/components/FaCenteredIcon";
 /* import styles from "../styles/MenuButton.module.css" */
 
 export default function MenuButton({
