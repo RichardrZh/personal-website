@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function ContactForm() {
-
+/* 
     const { register, handleSubmit } = useForm();
     const onSubmit = (data: any) => {
         console.log(data);
@@ -22,9 +22,9 @@ export default function ContactForm() {
             console.log(error.text);
         });
     };
-
-    return (
-        <form ref={form} onSubmit={handleSubmit(onSubmit, onErrors)}
+ */
+    return (<></>
+       /*  <form ref={form} onSubmit={handleSubmit(onSubmit, onErrors)}
               className="grid">
             <div>
                 <label>First Name</label>
@@ -43,6 +43,6 @@ export default function ContactForm() {
                 <input type="text" {...register('message')} />
             </div>
       <button>Submit</button>
-        </form>
+        </form> */
     )
 }
